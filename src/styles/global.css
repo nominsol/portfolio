@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 40px;
+}
+
+.header,
+.footer {
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
