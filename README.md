@@ -1,73 +1,66 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+개인 포트폴리오 웹사이트 프로젝트입니다.
 
-Currently, two official plugins are available:
+프론트엔드를 중심으로 서비스 전반을 이해하고 구현하는 개발자로서  
+프로젝트 경험, 실무 경험, 기술 스택, 경력 사항을 정리하고  
+직접 웹사이트 형태로 제작한 포트폴리오입니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+단순한 이력 정리가 아닌,  
+실제 사용자가 읽기 편하고 프로젝트를 직관적으로 이해할 수 있도록  
+UI/UX와 사용자 흐름을 고려하여 설계했습니다.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Deploy
 
-## Expanding the ESLint configuration
+🔗 Portfolio Website  
+https://nominsol-portfolio.vercel.app/
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Frontend
+- React
+- TypeScript
+- Vite
+- CSS
+- Framer Motion
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Deployment
+- Git
+- GitHub
+- Vercel
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Key Implementation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 프로젝트 모달 시스템 구현
+
+- 프로젝트 카드 클릭 시 상세 내용을 확인할 수 있는 Modal 구현
+- React Portal을 사용하여 화면 중앙에 자연스럽게 표시되도록 구성
+- 배경 Overlay 및 닫기 기능 처리
+
+---
+
+### 조건부 이미지 렌더링
+
+- 프로젝트별 이미지 유무에 따라 조건부 렌더링 적용
+- 이미지가 없는 경우에도 레이아웃이 깨지지 않도록 UI 개선
+
+---
+
+### 반응형 UI 및 사용자 흐름 개선
+
+- 다양한 화면 크기에서도 자연스럽게 동작하도록 구성
+- 카드 레이아웃, 타임라인, 섹션 간 여백 등을 세밀하게 조정
+
+---
+
+### Vercel 배포
+
+- GitHub와 연동하여 자동 배포 환경 구축
+- 실제 URL을 통해 언제든 접근 가능한 포트폴리오 사이트 운영
+
