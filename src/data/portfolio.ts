@@ -4,8 +4,8 @@ export const profile = {
   서비스 전반을 이해하는 개발자`,
   intro: `기술만을 위한 개발이 아닌, 실제 사용자가 사용하는 서비스를 만드는 것에 가치를 둡니다.
   이러한 가치관을 바탕으로 사용자에게 의미 있는 가치를 전달하는 개발자가 되고자 합니다.`,
-  resumeUrl: "#",
-  githubUrl: "#",
+  resumeUrl: "/nominsol_resume.pdf",
+  githubUrl: "https://github.com/nominsol",
 };
 
 export const strengths = [
@@ -88,7 +88,7 @@ export const projects: ProjectType[] = [
       "PyPDF2",
       "python_docx",
     ],
-    liveUrl: "#",
+    liveUrl: "",
     githubUrl: "https://github.com/nominsol/P.E.T",
     people: "4명",
     period: "2023.03 ~ 2023.06",
@@ -133,7 +133,7 @@ export const projects: ProjectType[] = [
       "RecyclerView",
       "Fragment",
     ],
-    liveUrl: "#",
+    liveUrl: "",
     githubUrl: "https://github.com/nominsol/Couch-Potato-s-plan",
     people: "5명",
     period: "2022.09 ~ 2022.11",
@@ -181,8 +181,8 @@ export const projects: ProjectType[] = [
       "POS 시스템에서 삼성월렛 기반 모바일 현금IC 결제 기능을 개발하여 새로운 결제 수단을 지원",
     image: "/images/cashic.png",
     techStack: ["Delphi"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "",
+    githubUrl: "",
     people: "1명",
     period: "2025.07 ~ 2025.07",
     summary:
@@ -226,8 +226,8 @@ export const projects: ProjectType[] = [
       "Oracle",
       "SQLite",
     ],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "",
+    githubUrl: "",
     people: "1명",
     period: "2025.08 ~ 2025.09",
     summary:
@@ -252,6 +252,61 @@ export const projects: ProjectType[] = [
         contents: [
           "백엔드 API와 연동하여 데이터를 조회 및 처리하는 기능을 구현했습니다.",
           "데이터 상태에 따라 UI가 동적으로 변경되도록 구성했습니다.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Portfolio Website",
+    type: "Personal Project",
+    description:
+      "프로젝트 경험과 실무 경험을 웹사이트 형태로 정리한 개인 포트폴리오 사이트",
+    image: "/images/portfolio_web.png",
+    techStack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "CSS",
+      "Framer Motion",
+      "Vercel",
+    ],
+    liveUrl: "",
+    githubUrl: "https://github.com/nominsol/portfolio",
+    people: "1명",
+    period: "2025.09",
+    summary:
+      "프로젝트 경험, 실무 경험, 기술 스택, 경력 사항을 직관적으로 전달할 수 있도록 웹사이트 형태로 제작한 개인 포트폴리오입니다. 단순한 이력 정리가 아닌 사용자 경험과 가독성을 고려하여 UI/UX를 설계했습니다.",
+    details: [
+      {
+        title: "프로젝트 중심의 포트폴리오 구조 설계",
+        contents: [
+          "프로젝트, 실무 경험, 기술 스택, 경력 사항을 명확하게 구분하여 정보 구조를 설계했습니다.",
+          "면접관이 빠르게 핵심 내용을 파악할 수 있도록 사용자 흐름을 고려한 레이아웃을 구성했습니다.",
+          "단순한 자기소개 페이지가 아닌 실제 서비스 형태의 포트폴리오를 목표로 개발했습니다.",
+        ],
+      },
+      {
+        title: "프로젝트 상세 모달 시스템 구현",
+        contents: [
+          "프로젝트 카드 클릭 시 상세 내용을 확인할 수 있는 Modal 기능을 구현했습니다.",
+          "React Portal을 활용하여 화면 중앙에 자연스럽게 표시되도록 구성했습니다.",
+          "Overlay, 닫기 버튼, 상세 정보 UI를 통해 사용자 경험을 개선했습니다.",
+        ],
+      },
+      {
+        title: "조건부 렌더링 및 UI 개선",
+        contents: [
+          "프로젝트별 이미지 유무에 따라 조건부 렌더링을 적용하여 레이아웃이 깨지지 않도록 개선했습니다.",
+          "카드 크기, 이미지 비율, 섹션 간 여백 등을 조정하여 전체적인 UI 완성도를 높였습니다.",
+          "반응형 구조를 고려하여 다양한 화면에서도 자연스럽게 보이도록 구현했습니다.",
+        ],
+      },
+      {
+        title: "GitHub 연동 및 Vercel 배포",
+        contents: [
+          "GitHub를 통해 프로젝트를 관리하고 버전 관리를 진행했습니다.",
+          "Vercel을 활용하여 자동 배포 환경을 구축하고 실제 서비스 URL로 운영했습니다.",
+          "배포 후 도메인 설정 및 최종 UI 점검을 통해 완성도를 높였습니다.",
         ],
       },
     ],

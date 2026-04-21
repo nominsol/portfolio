@@ -8,7 +8,7 @@ export default function Contact() {
         <SectionTitle
           eyebrow="감사합니다"
           // title="Contact"
-          description="연락 가능한 정보와 간단한 폼 영역입니다."
+          description="궁금한 점이 있으시다면 아래의 연락처로 연락 부탁드립니다."
         />
 
         <div className="contact-grid">

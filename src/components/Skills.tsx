@@ -8,7 +8,7 @@ export default function Skills() {
         <SectionTitle
           eyebrow="기술 스택"
           // title="Skills & Tools"
-          description="사용 가능한 기술과 익숙한 도구를 정리하는 섹션입니다."
+          description="현재 사용할 수 있고 학습 중인 기술들입니다."
         />
 
         <div className="skills-wrap">
